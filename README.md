@@ -1,5 +1,6 @@
 # ada-2021-project-lejt
 ada-2021-project-lejt created by GitHub Classroom
+
 DataShot
 Public perspective on gun ownership and violence in relation to gun shooting events over time.
  
