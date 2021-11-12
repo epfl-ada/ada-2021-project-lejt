@@ -5,7 +5,7 @@
 <br/><br/>
 <br/><br/>
 
-#### Abstract:
+#### Abstract:
 
 Gun ownership and regulation is a very divisive topic in the United States. It is clear that the country faces a problem with gun violence, this is reflected by the yearly 14 000 deaths following gun related homicides (statistic for 2019). However, people&#39;s opinions over how this problem should be tackled differ greatly.
 
