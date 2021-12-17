@@ -5,7 +5,7 @@
 <br/><br/>
 <br/><br/>
 
-Link to the website : https://thibmartin.github.io/Datashot/
+Link to the website : [Datashot](https://thibmartin.github.io/Datashot/)
 
 #### Abstract:
 
@@ -47,38 +47,29 @@ The length of the dataset should not be a significant concern as the csv file co
 
 #### Methods:
 
-The first step of the project is to import the Quotebank dataset as well as the gun violence related dataset into  2 separate DataFrame for further analysis. The quotes will have to be filtered over a set of key-words that relate to gun violence, such as: gun, 2nd amendment, shooting, … .  We will also have to filter out incomplete and meaningless quotes – this could be done by removing quotes shorter than a certain word count threshold. For the gun violence dataset, we will select a subset of events and create different categories for these events (officer related, mass shooting, accidents).
+The first step of the project was to import the Quotebank dataset as well as the gun violence related dataset into 2 separate DataFrames for further analysis. The gun violence dataset was obtained from the following [website](https://www.gunviolencearchive.org/). The quotes have been filtered over a set of key-words that relate to gun violence, see below the list of keywords and their distribution across dataset.  We also have filtered out incomplete and meaningless quotes, by removing quotes shorter than a certain word count threshold. For the gun violence dataset, we selected a subset of events based on the number of deaths. We choose a threshold of 8 deaths by visually analyzing the graphs.
 
-We will need to identify whether the person quoted is sharing a positive or negative opinion with respect to gun ownership. Sentimental analysis will be applied to quotes to see whether they are pro 2nd amendment/ in favour of gun ownership, or against. There already exist numerous sentiment classification algorithms online which could be imported and used for the purpose of the project. One idea could be to use a natural language processing (NLP) model like BERT in combination with PCA to obtain a two dimensional output. Quotes than cannot be easily classified will be eliminated (for example, if we use an algorithm which outputs a positivity score ranging from 0 to 1, we could filter out all quotes with scores between 0.4 and 0.6).
+We needed to identify whether the person quoted is sharing a positive or negative opinion with respect to gun ownership. Sentimental analysis was applied to quotes to see wheter they display a positive or negative sentiment. Furthermore, we performed emotional analysis to see the evolution of particular emotions, namely fear, anger, sadness, agression, joy, optimism. There already exist numerous sentiment classification algorithms online which are available and we needed to select the best ones for the purpose of the project. We settled on Vader and Bert. Finally we classified the quotes in 3 categories: positive, neutral or negative, based on their score. We also chose to apply emotion analysis to observe the evolution of different emotions around gun shootings events.
 
-Our aim is for each data entry from Quote Bank to be reduced to: speaker, date and sentimental score.
+The website (link on top of file) will present our work and our final analysis.
 
-We will use the date category to cross-reference the shooting events with the relevant quotations within a given timeframe. This means, choosing quotes within a certain window of a shooting event.
-
-We can plot the sentimental score of all quotes against time and observe the evolution of opinion. We can also add labels on the time axis for dates corresponding to significant shooting events (high death toll for example).
-
-We can also select a few significant speakers who reoccur over the entire time frame of our dataset and plot their individual opinion evolution (or lack there-of).
-
-Further analysis will be decided based on the results. We might explore the following supplementary questions …
-
-How do different types of shooting events (officer involved, accident, mass shooting, …) affect public opinion, and which type matters most in the public eye?
-
-What was the dialogue of Republican leaders with respect to gun violence and legislation before and after the 2016 election, specifically following mass shooting events?
-
-<br/><br/>
 
 #### Proposed timeline &amp; organisation within the team:
 
 Up to the 3rd December :
 
-We will conduct the sentimental analysis and see whether the analysis described above yields any significant results.
-
-Two members will work on the sentimental analysis while the other two will work on the plots.
+We had to rework on the filtering of the dataset, as it was deemed too scarce after milestone 2, we also split the tasks between the team members.
 
 Up to the 10th December:
 
-Further analysis and eventual supplementary questions.
+We took care of the bulk of the analysis separately and started working on the data story.
 
 Up to the 17th December:
 
-Develop and write the story… (prepare to be dazzled!)
+We finished the analysis and finalised the data story on the website.
+
+###### Work repartition
+Justin : Worked on data filtering, LDA and Emotion extraction
+Lorenzo : Worked on Sentiment Analysis (Bert and Vader), as well as data filtering
+Elie: Worked on correlation between events and multiple plots
+Thibaud: Worked on data filtering and data story
