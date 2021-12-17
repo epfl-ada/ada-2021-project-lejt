@@ -3,7 +3,9 @@
 <h2 align="center"> Public perspective on gun ownership and violence in relation to gun shooting events over time.</h2>
 
 <br/><br/>
-<br/><br/>
+#### Authors :
+
+*Elie Graham , Justin Manson, Lorenzo Germini, Thibaud Martin*
 
 Link to the website : [Datashot](https://thibmartin.github.io/Datashot/)
 
