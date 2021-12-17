@@ -55,7 +55,6 @@ We needed to identify whether the person quoted is sharing a positive or negativ
 
 The website (link on top of file) will present our work and our final analysis.
 
-
 #### Proposed timeline &amp; organisation within the team:
 
 Up to the 3rd December :
@@ -71,7 +70,7 @@ Up to the 17th December:
 We finished the analysis and finalised the data story on the website.
 
 ###### Work repartition
+Elie: Worked on correlation between events and multiple plots
 Justin : Worked on data filtering, LDA and Emotion extraction
 Lorenzo : Worked on Sentiment Analysis (Bert and Vader), as well as data filtering
-Elie: Worked on correlation between events and multiple plots
 Thibaud: Worked on data filtering and data story
